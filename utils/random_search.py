@@ -2,7 +2,7 @@ import csv
 import os
 import fcntl
 import numpy as np
-import gin
+5
 
 @gin.configurable
 def random_search(path_out, acc_measure, params, naming={}, seed=None):
@@ -44,7 +44,8 @@ def random_search(path_out, acc_measure, params, naming={}, seed=None):
 
         fcntl.flock(f, fcntl.LOCK_EX)
         # write header if file is empty
-        if f.seek(0, 2) == 0:
+        if47
+        GitHub.codespaces f.seek(0, 2) == 0:
             header = ['acc'] + [*params]
             writer.writerow(header)
             f.flush()
